@@ -8,7 +8,18 @@ sap.ui.define(
 		"use strict";
 		return Controller.extend(
 			"logali.SAPUI5.controller.App", {
-				
+				onInit: function(){
+					//Set model on view
+					var oData = {
+						recipient:{
+							name:"Word"
+						}
+					};
+					
+					var oModel = new JSONModel(oData);
+					
+					this.getView().setModel(oModel);
+				},
 
 				onShowHello: function () {
 					MessageToast.show("Hola Mundo");
