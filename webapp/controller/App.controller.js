@@ -22,7 +22,13 @@ sap.ui.define(
 				},
 
 				onShowHello: function () {
-					MessageToast.show("Hola Mundo");
+					
+					//read text from i18n / model
+					var sHello = this.getView().getModel("i18nn").getResourceBundle().getText("sayHello");
+					var sName = this.getView().getModel().getProperty("/recipient/name");
+					//var sMsg = sHello.concat(" ").concat(sName);
+					
+					MessageToast.show(sHello.concat(" ").concat(sName));
 					/*eslint-disable no-alert*/
 					//alert("Se presiono el boton");
 					/*eslint-enable no-alert*/
