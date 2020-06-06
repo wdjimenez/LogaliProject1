@@ -1,7 +1,7 @@
 <mvc:View
 		controllerName="logali.SAPUI5.controller.App"
 		xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc">
-	<Button text="Say hello!" press="onShowHello" />
+	<Button text="{i18nn>showHelloButtonText}" press="onShowHello" />
 	<Input	value="{/recipient/name}"
 			description="Hello {/recipient/name}"
 			valueLiveUpdate="true"
