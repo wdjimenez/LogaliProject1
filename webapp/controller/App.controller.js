@@ -2,23 +2,15 @@ sap.ui.define(
 	[
 		"sap/ui/core/mvc/Controller",
 		"sap/m/MessageToast",
-		"sap/ui/model/json/JSONModel"
+		"logali/SAPUI5/model/models"
 	],
-	function (Controller, MessageToast, JSONModel) {
+	function (Controller, MessageToast, models) {
 		"use strict";
 		return Controller.extend(
 			"logali.SAPUI5.controller.App", {
 				onInit: function(){
 					//Set model on view
-					var oData = {
-						recipient:{
-							name:"Word"
-						}
-					};
-					
-					var oModel = new JSONModel(oData);
-					
-					this.getView().setModel(oModel);
+					this.getView().setModel(models.createRecipient());
 				},
 
 				onShowHello: function () {
