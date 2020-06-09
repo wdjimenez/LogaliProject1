@@ -3,12 +3,13 @@ sap.ui.define([
 	],
 	function (ComponentContainer) {
 		new ComponentContainer({
-			name: "logali.SAPUI5",
-			setting: {
-				id: "logali"
-			},
-			async: true
-		}).placeAt("content");
+				name: "logali.SAPUI5",
+				settings: {
+					id: "logali"
+				},
+				async: true
+			}
+		).placeAt("content");
 	}
 	/*	function (XMLView) {
 			XMLView.create({

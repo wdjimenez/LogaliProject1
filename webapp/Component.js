@@ -7,14 +7,15 @@ sap.ui.define(
 	function (UIComponent, models, ResourceModel) {
 		return UIComponent.extend("logali.SAPUI5.Component.js", {
 			metadata: {
-				rootview: {
+				/*rootview: {
 					"viewName": "logali.SAPUI5.view.App",
 					"type": "XML",
-					"async": "true",
+					"async": true,
 					"id": "app"
-				}
-
+				}*/
+				manifest: "json"
 			},
+			
 			init: function () {
 				//Call the init function of the parent
 				UIComponent.prototype.init.apply(this, arguments);
