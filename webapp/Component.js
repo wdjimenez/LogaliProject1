@@ -1,11 +1,11 @@
 sap.ui.define(
 	[
 		"sap/ui/core/UIComponent",
-		"logali/SAPUI5/model/models",
+		"logali/Customers/model/models",
 		"sap/ui/model/resource/ResourceModel"
 	],
 	function (UIComponent, models, ResourceModel) {
-		return UIComponent.extend("logali.SAPUI5.Component.js", {
+		return UIComponent.extend("logali.Customers.Component", {
 			metadata: {
 				/*rootview: {
 					"viewName": "logali.SAPUI5.view.App",
@@ -25,7 +25,7 @@ sap.ui.define(
 
 				//set i18n model on view
 				var i18nModel = new ResourceModel({
-					bundleName: "logali.SAPUI5.i18n.i18n"
+					bundleName: "logali.Customers.i18n.i18n"
 				});
 
 				this.setModel(i18nModel, "i18n");

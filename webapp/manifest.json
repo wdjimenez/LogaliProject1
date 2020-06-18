@@ -2,7 +2,7 @@
 	"_version": "1.12.0",
 	"sap.app": {
 		"_version": "1.3.0",
-		"id": "logali.SAPUI5",
+		"id": "logali.Customers",
 		"type": "application",
 		"i18n": "i18n/i18n.properties",
 		"applicationVersion": {
@@ -37,7 +37,7 @@
 	"sap.ui5": {
 		"_version": "1.2.0",
 		"rootView": {
-			"viewName": "logali.SAPUI5.view.App",
+			"viewName": "logali.Customers.view.App",
 			"type": "XML",
 			"async": true,
 			"id": "app"
@@ -58,7 +58,7 @@
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
-					"bundleName": "logali.SAPUI5.i18n.i18n"
+					"bundleName": "logali.Customers.i18n.i18n"
 				}
 			}
 		},

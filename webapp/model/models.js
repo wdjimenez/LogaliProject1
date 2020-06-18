@@ -8,7 +8,7 @@ sap.ui.define(
 			createRecipient: function () {
 				var oData = {
 					recipient: {
-						name: "Word"
+						name: "World"
 					}
 				};
 

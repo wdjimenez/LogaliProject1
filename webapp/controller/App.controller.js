@@ -8,7 +8,7 @@ sap.ui.define(
 	function (Controller, MessageToast) {
 		"use strict";
 		return Controller.extend(
-			"logali.SAPUI5.controller.App", {
+			"logali.Customers.controller.App", {
 				onInit: function(){
 
 				},
