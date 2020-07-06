@@ -8,12 +8,12 @@ sap.ui.define(
 	function (Controller, MessageToast) {
 		"use strict";
 		return Controller.extend(
-			"logali.Customers.controller.App", {
+			"logali.Customers.controller.HelloPanel", {
 				onInit: function(){
 
-				}
+				},
 
-			/*	onShowHello: function () {
+				onShowHello: function () {
 					
 					//read text from i18n / model
 					var sHello = this.getView().getModel("i18n").getResourceBundle().getText("sayHello");
@@ -24,7 +24,7 @@ sap.ui.define(
 					/*eslint-disable no-alert*/
 					//alert("Se presiono el boton");
 					/*eslint-enable no-alert*/
-			/*	} */
+				}
 			}
 		);
 	}
