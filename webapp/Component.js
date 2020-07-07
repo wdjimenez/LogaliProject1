@@ -2,20 +2,15 @@ sap.ui.define(
 	[
 		"sap/ui/core/UIComponent",
 		"logali/Customers/model/models",
-		"sap/ui/model/resource/ResourceModel"
+		"sap/ui/model/resource/ResourceModel",
+		"./controller/HelloDialog"
 	],
-	function (UIComponent, models, ResourceModel) {
+	function (UIComponent, models, ResourceModel, HelloDialog) {
 		return UIComponent.extend("logali.Customers.Component", {
 			metadata: {
-				/*rootview: {
-					"viewName": "logali.SAPUI5.view.App",
-					"type": "XML",
-					"async": true,
-					"id": "app"
-				}*/
 				manifest: "json"
 			},
-			
+
 			init: function () {
 				//Call the init function of the parent
 				UIComponent.prototype.init.apply(this, arguments);
@@ -29,7 +24,19 @@ sap.ui.define(
 				});
 
 				this.setModel(i18nModel, "i18n");
+
+				this._helloDialog = new HelloDialog(this.getRootControl());
+			},
+
+			exit: function () {
+				this._helloDialog.destroy();
+				delete this._helloDialog;
+			},
+
+			openHelloDialog: function () {
+				this._helloDialog.open();
 			}
+
 		});
 	}
 

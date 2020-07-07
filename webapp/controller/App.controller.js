@@ -11,20 +11,13 @@ sap.ui.define(
 			"logali.Customers.controller.App", {
 				onInit: function(){
 
+				},
+				
+				onShowDialog: function () {
+					this.getOwnerComponent().openHelloDialog();
 				}
 
-			/*	onShowHello: function () {
-					
-					//read text from i18n / model
-					var sHello = this.getView().getModel("i18n").getResourceBundle().getText("sayHello");
-					var sName = this.getView().getModel().getProperty("/recipient/name");
-					//var sMsg = sHello.concat(" ").concat(sName);
-					
-					MessageToast.show(sHello.concat(" ").concat(sName));
-					/*eslint-disable no-alert*/
-					//alert("Se presiono el boton");
-					/*eslint-enable no-alert*/
-			/*	} */
+		
 			}
 		);
 	}
