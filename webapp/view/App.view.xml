@@ -8,6 +8,7 @@
 					</headerContent>
 					<content>
 						<mvc:XMLView viewName="logali.Customers.view.HelloPanel" />
+						<mvc:XMLView viewName="logali.Customers.view.CustomerList" />
 					</content>
 				</Page>
 			</pages>

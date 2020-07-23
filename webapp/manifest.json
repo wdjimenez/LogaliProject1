@@ -60,6 +60,10 @@
 				"settings": {
 					"bundleName": "logali.Customers.i18n.i18n"
 				}
+			},
+			"customer":{
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "Customers.json"
 			}
 		},
 		"resources": {
